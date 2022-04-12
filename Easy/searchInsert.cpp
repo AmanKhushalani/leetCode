@@ -1,0 +1,20 @@
+// question link = https://leetcode.com/problems/search-insert-position/submissions/
+// #include <bits/stdc++.h>
+#include <iostream>
+#include<map>
+#include<vector>
+
+using namespace std;
+
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int i;
+        for(i=0 ; i<nums.size() && nums[i]<=target ; i++)
+        {
+            if(nums[i] == target) return i;
+        }
+        return i;
+        
+    }
+};
